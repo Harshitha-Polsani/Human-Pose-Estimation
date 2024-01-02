@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pose Estimation Results</title>
+    <style>
+        body {
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #333;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-top: 50px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-top: 30px;
+            color: #008CBA;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+        }
+        
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            margin-top: 50px;
+        }
+        .nav{
+            width: 100%;
+            background: steelblue;
+            height: 50px;
+        }
+        a:hover{
+            background:white;
+            color:steelblue;
+        }
+        ul{
+            list-style:none;
+            padding:0;
+            margin:0;
+            position:absolute;
+            float:left;
+            margin-top:5px;
+        }
+        ul a{
+            width:250px;
+            color:white;
+            display:block;
+            text-decoration:none;
+            font-size:20px;
+            text-align:center;
+            padding:10px;
+            border-radius:15px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <a href="/">Detect Another Pose</a>
+        </ul>
+    </div>
+    <h1>Pose Estimation Results</h1>
+    <h2>Predicted Pose Label: {{ pose_label.title().replace("_", " ") }}</h2>
+	<img src="data:image/jpeg;base64,{{ encoded_img }}" alt="Pose Image" style="width: 516px; height: 516px;">
+	<script>
+	    window.onload = function() {
+	        if (window.location.href.indexOf("invalid_file") > -1) {
+	            alert("Invalid file format. Please choose a JPEG or PNG file.");
+	        }
+	    };
+	</script>
+</body>
+</html>
