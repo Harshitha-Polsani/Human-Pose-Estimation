@@ -3,14 +3,20 @@ This project presents a machine learning-based approach to human pose detection,
 
 # Dataset
 Dataset: A collection of images used for pose estimation.
+
 Keypoints CSV: Pose landmarks extracted using MediaPipe, stored in CSV format.
+
 Merged CSV: Aggregated data of all poses and a balanced dataset using sampling techniques.
 
 # Files and Folders
 Notebooks: Jupyter notebooks detailing the process.
+
 Pose Detection before and after sampling.
+
 Analysis using Ensemble Methods.
+
 Real-Time Pose Detection Implementation.
+
 User Interface: A dedicated folder containing UI elements and files.
 
 # Real-Time Pose Detection
@@ -18,8 +24,11 @@ The implementation uses MediaPipe for pose detection and a trained SVM model for
 
 # Methodology
 Data collection and preprocessing.
+
 Feature extraction using the MediaPipe pose detection model.
+
 Application of machine learning algorithms (SVM, Random Forest, KNN, Bagging Classifier, Gradient Boosting Classifier) and ensemble methods.
+
 Real-time pose detection implementation using MediaPipe and SVM.
 
 # Results
