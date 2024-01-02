@@ -1,35 +1,37 @@
 # Overview
-This project presents a machine learning-based approach to human pose detection, utilizing keypoints extraction and ensemble methods. It aims to detect six different poses (Balancing, Inverted, Reclining, Sitting, Standing, and Wheel Poses) with high accuracy and applicability in various real-world scenarios like fitness tracking, sports analysis, and rehabilitation.
+This project presents a machine learning-based approach to human pose detection, leveraging keypoint extraction and ensemble methods. It accurately detects six different poses (Balancing, Inverted, Reclining, Sitting, Standing, and Wheel Poses) and is tailored for use in fitness tracking, sports analysis, and rehabilitation.
 
 # Dataset
-Dataset: A collection of images used for pose estimation.
+The dataset includes a series of images specifically used for pose estimation. The key steps in dataset preparation are:
 
-Keypoints CSV: Pose landmarks extracted using MediaPipe, stored in CSV format.
+## Keypoints CSV:
+Extracted pose landmarks from images using MediaPipe, formatted as CSV. This crucial step involves processing each image to identify and record pose landmark data.
 
-Merged CSV: Aggregated data of all poses and a balanced dataset using sampling techniques.
+## Merged CSV: 
+Aggregated data of all poses. Includes an original dataset and a balanced version, achieved through sampling techniques to ensure robustness in pose detection.
 
 # Files and Folders
-Notebooks: Jupyter notebooks detailing the process.
+The project is organized into several key sections:
 
-Pose Detection before and after sampling.
+Pose Detection before and after sampling: Analyzing the impact of data balancing on pose detection.
 
-Analysis using Ensemble Methods.
+Analysis using Machine Learning Models: Exploring various machine learning models and ensemble techniques for improved accuracy.
 
-Real-Time Pose Detection Implementation.
+Real-Time Pose Detection Implementation: Demonstrating the application in a real-time scenario.
 
-User Interface: A dedicated folder containing UI elements and files.
+User Interface: Folder containing all UI-related elements and files, ensuring a user-friendly interaction with the system.
 
 # Real-Time Pose Detection
-The implementation uses MediaPipe for pose detection and a trained SVM model for pose classification. The system is capable of processing real-time video feeds, accurately classifying poses, and providing immediate feedback.
+The implementation uses MediaPipe for Key Feature Extraction and a trained SVM model for pose classification. The system is capable of processing real-time video feeds, accurately classifying poses, and providing immediate feedback.
 
 # Methodology
-Data collection and preprocessing.
+Data Collection and Preprocessing: Gathering and preparing the image dataset for analysis.
 
-Feature extraction using the MediaPipe pose detection model.
+Keypoint Extraction: Using MediaPipe for precise extraction of pose landmarks from each image in the dataset.
 
-Application of machine learning algorithms (SVM, Random Forest, KNN, Bagging Classifier, Gradient Boosting Classifier) and ensemble methods.
+Model Application: Employing machine learning algorithms such as SVM, Random Forest, KNN, Bagging Classifier, and Gradient Boosting Classifier, along with ensemble methods for enhanced detection accuracy.
 
-Real-time pose detection implementation using MediaPipe and SVM.
+Real-Time Implementation: Combining MediaPipe and SVM for real-time pose detection and classification.
 
 # Results
-The system demonstrates high performance in pose detection, achieving an accuracy of 92% with Ensemble methods. The real-time implementation can efficiently handle video processing with minimal latency, making it suitable for applications like fitness tracking and rehabilitation.
+The system demonstrates a high performance in pose detection, achieving an accuracy of 92% with SVM and 91% with Ensemble methods. Its capability to efficiently handle video processing in real-time makes it an ideal solution for applications in fitness tracking and rehabilitation.
